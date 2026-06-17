@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Explore our extensive range of professional catering services including Wedding, Corporate, Birthday, Buffet, Festive, Packed Meals, High Tea, and VIP Dining.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+     <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link active" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link active">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 3. SERVICES SECTION -->
+    <section class="page-section" id="services">
+
+    <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Our Capabilities</span>
+        <h1 class="text-white page-heading">Catering Services</h1>
+        <p class="max-w-600 margin-auto text-light">Explore our versatile service categories. We bring taste, texture, and service elegance to any event format.</p>
+      </div>
+
+      <div class="section-container">
+        <div class="grid-layout cols-3 gap-2">
+          <!-- Service Card 1 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #4A0E17, #801C29)">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+            <div class="service-content">
+              <h3>Wedding Catering</h3>
+              <p>Premium set dinners, buffets, cocktail canapés, custom bride/groom drinks, and luxury dining layouts to make your special day feel magical.</p>
+              <ul>
+                <li>Champagne toast setups</li>
+                <li>Elegant table styling</li>
+                <li>VIP waiter services</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=wedding" class="btn btn-outline-maroon btn-full">Book Wedding Service</a>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #1E1617, #3A0F14)">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="service-content">
+              <h3>Corporate Catering</h3>
+              <p>Boardroom meetings, large-scale conferences, annual dinners, and seminars. We deliver delicious food with punctual timing and quiet setup.</p>
+              <ul>
+                <li>Executive lunch boxes</li>
+                <li>All-day coffee breaks</li>
+                <li>Finger buffet style</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=corporate" class="btn btn-outline-maroon btn-full">Book Corporate Service</a>
+            </div>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #D4AF37, #C59B27)">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <div class="service-content">
+              <h3>Birthday Catering</h3>
+              <p>Creative catering solutions for children's theme parties, milestone birthdays, or casual social gatherings. High on taste and fun factors.</p>
+              <ul>
+                <li>Interactive slider stations</li>
+                <li>Candy & dessert displays</li>
+                <li>Mocktail bars</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=birthday" class="btn btn-outline-maroon btn-full">Book Birthday Service</a>
+            </div>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #4A0E17, #C59B27)">
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <div class="service-content">
+              <h3>Buffet Catering</h3>
+              <p>A classic option featuring beautiful metal chafers, serving tools, and a dynamic menu layout of appetizers, main dishes, and sweet treats.</p>
+              <ul>
+                <li>Warm food preservation</li>
+                <li>Thematic floral decors</li>
+                <li>Broad variety choices</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=buffet" class="btn btn-outline-maroon btn-full">Book Buffet Service</a>
+            </div>
+          </div>
+          <!-- Service Card 5 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #2E7D32, #4CAF50)">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="service-content">
+              <h3>Packed Meals</h3>
+              <p>Single-portion hot box meals designed for outdoor crews, large events, conventions, or quick office staff meals. Healthy, sealed, and sanitary.</p>
+              <ul>
+                <li>Eco-friendly box packaging</li>
+                <li>Individually portioned cutlery</li>
+                <li>Balanced macros/diet labels</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=packed" class="btn btn-outline-maroon btn-full">Book Packed Meals</a>
+            </div>
+          </div>
+          <!-- Service Card 6 -->
+          <div class="service-card">
+            <div class="service-img-placeholder" style="background: linear-gradient(135deg, #8E24AA, #BA68C8)">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="service-content">
+              <h3>High Tea Catering</h3>
+              <p>Refined afternoon gatherings featuring premium tea, organic coffee, fresh scones, mini tarts, premium macarons, and dainty savory sandwiches.</p>
+              <ul>
+                <li>Multi-tiered display stands</li>
+                <li>Porcelain tea sets</li>
+                <li>Sweet & savory balance</li>
+              </ul>
+              <a href="6_event_packages_booking.html?service=hightea" class="btn btn-outline-maroon btn-full">Book High Tea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

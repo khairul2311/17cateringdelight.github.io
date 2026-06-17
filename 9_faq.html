@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Experience professional, premium, and delicious catering services for weddings, corporate lunches, birthdays, and festive celebrations. Request a quote online today.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Added Styles for Smooth Nested Accordion & Tidier Layout -->
+  <style>
+    /* Ensure padding doesn't affect width/squeezing */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* --- New Warm Taupe Background Wrapper (Now Boxed) --- */
+    .taupe-bg-section {
+      background: linear-gradient(135deg, #9E8C81, #7A695C); /* Matches the warm taupe/brown from the image */
+      padding: 60px 40px; 
+      margin-top: 32px; 
+      margin-bottom: 60px;
+      border-radius: 12px; /* Soft rounded corners for the boxed look */
+    }
+
+    .faq-accordion-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* Slightly tighter gap to match the image */
+    }
+
+    /* --- "Related to" Row Styling --- */
+    .related-to-row {
+      margin-bottom: 15px;
+      padding-left: 5px;
+    }
+
+    .related-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* --- Category Container (Outer Box) --- */
+    .faq-category {
+      border: none;
+      border-radius: 10px; /* Softer rounded corners */
+      background-color: #FDFBF7; /* Light cream for the trigger */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    
+    .category-trigger {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      padding: 22px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-trigger h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif; 
+      color: #2c3e50; 
+      display: flex;
+      align-items: center;
+      gap: 8px; /* Space between text and emoji */
+    }
+
+    /* --- Smooth CSS Grid Animation Wrappers --- */
+    .category-content-wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s ease-in-out;
+      background-color: #F2EDE4; /* Slightly darker cream background for expanded area */
+    }
+
+    .faq-content-wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s ease-in-out;
+    }
+
+    .category-content-wrapper.open,
+    .faq-content-wrapper.open {
+      grid-template-rows: 1fr;
+    }
+
+    .category-inner,
+    .faq-inner {
+      overflow: hidden;
+    }
+
+    /* --- Standard Accordion Inner Padding --- */
+    .category-inner-wrapper {
+      padding: 20px 25px 25px 25px; 
+      display: flex;
+      flex-direction: column;
+      gap: 12px; 
+    }
+
+    .faq-item {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      background-color: #FDFBF7; 
+      overflow: hidden;
+    }
+
+    .faq-trigger {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      padding: 16px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #444;
+      transition: color 0.3s ease;
+      gap: 15px; 
+    }
+
+    .faq-trigger span:first-child {
+      flex: 1; 
+      line-height: 1.4;
+    }
+
+    .faq-trigger:hover, 
+    .faq-trigger.active {
+      color: #c9983b; 
+    }
+
+    .faq-inner-content {
+      padding: 15px 0 20px 0; 
+      margin: 0 20px; 
+      border-top: 1px solid #eaeaea; 
+    }
+
+    .faq-inner-content p {
+      margin: 0;
+      color: #666;
+      line-height: 1.6;
+      font-size: 1.2rem;
+    }
+
+    /* ==================================================================== */
+    /* NEW: Mega Menu 2-Column Styling (For Menu & Dietary Accommodations)  */
+    /* ==================================================================== */
+    .mega-menu-content {
+      padding: 25px 35px 35px 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .mega-sub-heading {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.15rem;
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mega-sub-heading i {
+      font-size: 1rem;
+      color: #7A695C;
+      font-style: normal;
+    }
+
+    .mega-link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mega-link-list a {
+      color: #333;
+      text-decoration: underline;
+      text-decoration-color: rgba(0,0,0,0.3);
+      text-underline-offset: 4px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+      display: inline-block;
+    }
+
+    .mega-link-list a:hover {
+      color: #800000;
+      text-decoration-color: #800000;
+    }
+
+    /* The soft red/pink highlight glow effect from the image */
+    .highlight-link {
+      position: relative;
+      z-index: 1;
+    }
+
+    .highlight-link::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 160%;
+      background: radial-gradient(ellipse at center, rgba(200, 100, 100, 0.15) 0%, rgba(200, 100, 100, 0) 70%);
+      border-radius: 50%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    /* ==================================================================== */
+
+    /* --- Icon Rotation Transitions --- */
+    .category-trigger.active .faq-icon i,
+    .faq-trigger.active .faq-icon i {
+      transform: rotate(180deg);
+    }
+    
+    .faq-icon i {
+      transition: transform 0.4s ease-in-out;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link active" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link active">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+   
+    <!-- 9. FAQ SECTION -->
+    <section class="page-section" id="faq">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Got Questions?</span>
+        <h1 class="text-white page-heading">Frequently Asked Questions</h1>
+        <p class="max-w-600 margin-auto text-light">Find quick answers below regarding minimum guest count, menu customization, catering setup, and payment.</p>
+      </div>
+
+      <!-- TAUPE BACKGROUND WRAPPER (Now Boxed to Match Red Header) -->
+      <div class="section-container margin-auto taupe-bg-section">
+        <div class="max-w-1000 margin-auto">
+          
+          <div class="related-to-row">
+            <span class="related-text">Related to:</span>
+          </div>
+
+          <div class="faq-accordion-container">
+            
+            <!-- Category 1: Booking & Ordering -->
+            <div class="faq-category">
+              <button class="category-trigger">
+                <h3>Booking & Ordering 📅</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div class="category-content-wrapper">
+                <div class="category-inner">
+                  <div class="category-inner-wrapper">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>How far in advance do I need to book?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>For large events like weddings and corporate galas, we recommend booking at least [3 to 6 months] in advance to secure your date. For smaller private gatherings or corporate drop-off lunches, we kindly request a minimum notice of [48 to 72 hours]. Dates fill up quickly during peak holiday and wedding seasons, so early booking is always encouraged!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Is there a minimum order requirement?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>Yes. For full-service events, we require a minimum of [50] guests or a minimum spend of [RM 1,500]. For casual drop-off catering and bento boxes, our minimum order is [15] pax.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>How do I secure my date?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>To officially reserve your date, we require a signed catering agreement and a non-refundable deposit of [30%] of your estimated total. The date is not guaranteed until both are received.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Menu & Dietary Accommodations -->
+            <div class="faq-category">
+              <button class="category-trigger">
+                <h3>Menu & Dietary Accommodations 🍴</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div class="category-content-wrapper">
+                <div class="category-inner">
+                  
+                  <div class="category-inner-wrapper">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Do you cater to specific dietary restrictions or allergies?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>Absolutely. We believe every guest should enjoy a great meal. We regularly accommodate Halal, vegetarian, vegan, gluten-free, and nut-free diets. Please provide a list of your guests' dietary requirements at least [14 days] before the event so our kitchen can prepare accordingly.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Can we customize our menu, or do we have to choose set packages?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>Both! We offer thoughtfully curated set menus for convenience, but we are more than happy to mix and match items or create a fully bespoke menu tailored to your theme, budget, and taste preferences.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Do you offer menu tasting sessions?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>Yes, we offer private tasting sessions for weddings and events over [100] guests. Tastings accommodate up to [4] people and carry a fee of [RM 150]. If you choose to book your event with us, this fee will be credited directly toward your final invoice.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Category 3: Logistics & Setup -->
+            <div class="faq-category">
+              <button class="category-trigger">
+                <h3>Logistics & Setup 🚚</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div class="category-content-wrapper">
+                <div class="category-inner">
+                  <div class="category-inner-wrapper">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Do you provide service staff, or is it drop-off only?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>We offer both options. For a seamless experience, you can book our full-service package, which includes professional waitstaff, buffet attendants, and on-site chefs. If you just need the food, we offer convenient drop-off delivery where we set up the spread in disposable or returnable containers and leave you to enjoy.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Are plates, cutlery, chafing dishes, and linens included?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>For our full-service catering, standard chafing dishes and serving utensils are always included. We offer high-quality disposable plates and cutlery by default. Premium ceramic dinnerware, glassware, and table linens can be added to your package for an additional rental fee.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>How much time do you need for setup and breakdown at the venue?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>Our team typically arrives [1.5 to 2 hours] before your guest arrival time to ensure the food stations are perfectly arranged. Breakdown usually takes about [1 hour] after the food service concludes.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Pricing & Policies -->
+            <div class="faq-category">
+              <button class="category-trigger">
+                <h3>Pricing & Policies ⚖️</h3>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div class="category-content-wrapper">
+                <div class="category-inner">
+                  <div class="category-inner-wrapper">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>What is your cancellation and refund policy?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>We understand that plans change. Cancellations made more than [30 days] prior to the event will receive a full refund, minus the initial non-refundable deposit. Cancellations made within [14 days] of the event are subject to a charge of [50%] of the total invoice, as ingredients will have already been ordered.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>When is the final headcount and final payment due?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>We require your final, locked-in guest count [14 days] before the event. This number cannot be reduced after this date. Your final payment balance is due [7 days] prior to the event date.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                      <button class="faq-trigger">
+                        <span>Are there additional fees I should expect?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                      <div class="faq-content-wrapper">
+                        <div class="faq-inner">
+                          <div class="faq-inner-content">
+                            <p>We pride ourselves on transparent pricing. Your custom quote will clearly itemize the cost of food, rentals, and staff. Additional standard charges include a delivery fee (based on mileage from our kitchen) and a standard [10%] service charge for full-service events.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- END OF TAUPE BACKGROUND WRAPPER -->
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved. Designed under BERC2393 Assignment Guidelines.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+
+  <!-- Script for Grid-Based Accordion Functionality -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      
+      // 1. Handle Main Category Dropdowns
+      const categoryTriggers = document.querySelectorAll(".category-trigger");
+
+      categoryTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.classList.toggle("active");	
+          const contentWrapper = this.nextElementSibling;
+          contentWrapper.classList.toggle("open");
+        });
+      });
+
+      // 2. Handle Individual Question Dropdowns (Nested)
+      const specificFaqTriggers = document.querySelectorAll(".faq-item .faq-trigger");
+
+      specificFaqTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+          this.classList.toggle("active");
+          const contentWrapper = this.nextElementSibling;
+          contentWrapper.classList.toggle("open");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

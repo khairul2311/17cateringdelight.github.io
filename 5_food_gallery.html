@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="View past setups, buffet layout arrangements, and organic ingredient dishes in our photo and video catering design gallery.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+     <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link active" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link active">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 5. FOOD GALLERY SECTION -->
+    <section class="page-section" id="gallery">
+
+    <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Visual Delights</span>
+        <h1 class="text-white page-heading">Our Food Gallery</h1>
+        <p class="max-w-600 margin-auto text-light">Peek into our kitchen and past events. Discover the beauty and styling of our setups and dishes.</p>
+      </div>
+
+      <div class="section-container">
+        <!-- Filter Bar -->
+        <div class="gallery-filter-bar text-center margin-bottom-2">
+          <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+          <button class="gallery-filter-btn" data-filter="Wedding">Wedding Banquet</button>
+          <button class="gallery-filter-btn" data-filter="Corporate">Corporate Lunch</button>
+          <button class="gallery-filter-btn" data-filter="Birthday">Birthday Bashes</button>
+	  <button class="gallery-filter-btn" data-filter="Buffet">Buffet Platters</button>
+	  <button class="gallery-filter-btn" data-filter="Packed Meal">Packed Meal</button>
+	  <button class="gallery-filter-btn" data-filter="High Tea">High Tea</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Item 1: Wedding Banquet -->
+	  <div class="gallery-item"
+     		data-category="Wedding"
+     		data-src="assets/Dewan 2.png"
+     		data-images='[
+       		"assets/Wedding Catering (People).png",
+       		"assets/Wedding Gallery 1.png",
+       		"assets/Wedding Gallery 2.png",
+       		"assets/Wedding Gallery 3.png",
+		"assets/Wedding Gallery 4.png",
+		"assets/Wedding Gallery 5.png"
+     		]'
+
+
+          <div class="gallery-item" data-category="Wedding" data-src="assets/Wedding Catering (People).png" 
+		data-title="Elegant Wedding Table Setting" 
+		data-desc="Complete table layout featuring gold utensils, white porcelain, and floral arrangements.">
+            <img src="assets/Dewan 2.png" alt="Wedding Banquet">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Wedding Banquet</span>
+                <h4>Wedding Table & CD Hall Setting</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+	  <!-- Item 2: Corporate Lunch -->
+	  <div class="gallery-item"
+     		data-category="Corporate"
+     		data-src="assets/Corporate Catering (People).png"
+     		data-images='[
+       		"assets/Corporate Catering (People).png",
+       		"assets/Corporate Gallery 1.png",
+       		"assets/Corporate Gallery 2.png",
+       		"assets/Corporate Gallery 3.png",
+		"assets/Corporate Gallery 4.png",
+		"assets/Corporate Gallery 5.png"
+     		]'
+          <div class="gallery-item" data-category="Corporate" data-src="assets/Corporate Lunch (People).png" 
+		data-title="Corporate Ceremony" 
+		data-desc="Platter filled with premium sandwiches, wraps, greens, and side items.">
+            <img src="assets/Corporate Catering (People).png" alt="Corporate Lunch">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Corporate Lunch</span>
+                <h4>Office Lunch Platter</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+
+	  <!-- Item 3: Birthday Bashes  -->
+	  <div class="gallery-item"
+     		data-category="Birthday"
+     		data-src="assets/Birthday Catering (People).png"
+     		data-images='[
+       		"assets/Birthday Catering (People).png",
+       		"assets/Birthday Gallery 1.png",
+       		"assets/Birthday Gallery 2.png",
+       		"assets/Birthday Gallery 3.png",
+		"assets/Birthday Gallery 4.png",
+		"assets/Birthday Gallery 5.png"
+     		]'
+          <div class="gallery-item" data-category="Birthday" data-src="assets/Birthday Catering (People).png" 
+		data-title="Birthday Party Arrangement" 
+		data-desc="Warm food presentation in metal chafing dishes with seasonal garnishing.">
+            <img src="assets/Birthday Catering (People).png" alt="Birthday Bashes">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Birthday Tables</span>
+                <h4>Birthday Party</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+
+
+	  <!-- Item 4: Buffet -->
+	  <div class="gallery-item"
+     		data-category="Buffet"
+     		data-src="assets/Buffet (People).png"
+     		data-images='[
+       		"assets/Buffet (People).png",
+       		"assets/Buffet Gallery 1.png",
+       		"assets/Buffet Gallery 2.png",
+       		"assets/Buffet Gallery 3.png",
+		"assets/Buffet Gallery 4.png",
+		"assets/Buffet Gallery 5.png"
+     		]'
+          <div class="gallery-item" data-category="Buffet" data-src="assets/Buffet (People).png" 
+		data-title="Buffet Platters" 
+		data-desc="A live action carving station with display chef lighting.">
+            <img src="assets/Buffet (People).png" alt="Buffet Platters">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Buffet</span>
+                <h4>Buffet Platters</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+
+     	  <!-- Item 5: Packed Meal -->
+	  <div class="gallery-item"
+     		data-category="Packed Meal"
+     		data-src="assets/Packed Meal (People).png"
+     		data-images='[
+       		"assets/Packed Meal (People).png",
+       		"assets/Packed Meal Gallery 1.png",
+       		"assets/Packed Meal Gallery 2.png",
+       		"assets/Packed Meal Gallery 3.png",
+		"assets/Packed Meal Gallery 4.png",
+		"assets/Packed Meal Gallery 5.png"
+     		]'
+          <div class="gallery-item" data-category="Packed Meal" data-src="assets/Packed Meal (People).png" 
+		data-title="Executive Seminar Setup" 
+		data-desc="A buffet and tea break area arranged inside a corporate conference lobby.">
+            <img src="assets/Packed Meal (People).png" alt="Packed Meal">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Event Setup</span>
+                <h4>Corporate Reception</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+
+
+	  <!-- Item 6: High Tea -->
+	  <div class="gallery-item"
+     		data-category="High Tea"
+     		data-src="assets/High Tea Catering (People).png"
+     		data-images='[
+       		"assets/High Tea (People).png",
+       		"assets/High Tea Gallery 1.png",
+       		"assets/High Tea Gallery 2.png",
+       		"assets/High Tea Gallery 3.png",
+		"assets/High Tea Gallery 4.png",
+		"assets/High Tea Gallery 5.png"
+     		]'
+           <div class="gallery-item" data-category="High Tea" data-src="assets/High Tea (People).png" 
+		data-title="Executive Interactive Barista Station" 
+		data-desc="A live action carving station with display barista lighting.">
+            <img src="assets/High Tea (People).png" alt="High Tea">
+
+            <div class="gallery-item-overlay">
+             <div class="overlay-text">
+                <span class="gallery-category">Barista Setup</span>
+                <h4>High Tea & Barista</h4>
+             </div>
+             <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+	</div>
+
+        
+        <!-- Video Promo -->
+	<div class="gallery-video-block margin-top-3">
+  		<div class="video-card card-glass border-gold flex-layout gap-2 align-center">
+    		<div class="video-thumbnail-container flex-1">
+      	<video 
+        id="promo-video"
+        width="100%"
+        controls
+        <source src="assets/Promotional Video.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+
+
+    	<div class="video-info-container flex-1">
+      	<span class="gold-text uppercase-lettering"> Promotion Video </span> 
+        <h3>A Glimpse into Catering Delight</h3>
+
+      	<p>
+       	   Watch our team prepare luxury catering events, 
+	   menu tasting and event setup.
+      	</p>
+
+      	<p class="video-meta">
+          <strong>Length:</strong> 1 mins |
+          <strong>Resolution:</strong> 1080p Full HD
+      	</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Lightbox Modal -->
+      <div class="gallery-lightbox" id="gallery-lightbox">
+        <button class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+          <img src="" alt="Zoomed View" class="lightbox-image" id="lightbox-img">
+          <div class="lightbox-caption">
+            <h3 id="lightbox-title">Image Title</h3>
+            <p id="lightbox-desc">Detailed explanation of this gallery display.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

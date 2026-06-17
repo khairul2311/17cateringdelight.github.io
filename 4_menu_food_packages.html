@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Explore our gourmet food packages. Choose from Basic Buffet, Corporate Lunch, Wedding Banquet, and Premium Event catering menus or customize them live.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link active" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link active">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 4. MENU & FOOD PACKAGES SECTION -->
+    <section class="page-section" id="menu-packages">
+
+    <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Culinary Selections</span>
+        <h1 class="text-white page-heading">Our Food Packages</h1>
+        <p class="max-w-600 margin-auto text-light">Choose from our pre-designed dining experiences or customize them to suit your preferences.</p>
+      </div>
+
+      <!-- Live Customizer Box (Interactive Option) -->
+      <div class="section-container menu-builder-container">
+        <div class="customizer-box card-glass">
+          <div class="customizer-header">
+            <h3><i class="fa-solid fa-sliders gold-text"></i> Interactive Menu Customizer</h3>
+            <p>Customize your package elements and see menu recommendations live!</p>
+          </div>
+          <div class="customizer-body grid-layout cols-3 gap-2">
+            <div>
+              <label for="customizer-diet">Dietary Requirement</label>
+              <select id="customizer-diet">
+                <option value="none">Standard Menu</option>
+                <option value="vegetarian">Vegetarian / Vegan Focus</option>
+                <option value="gluten-free">Gluten-Free Priority</option>
+                <option value="halal">Halal Certified Ingredients</option>
+              </select>
+            </div>
+            <div>
+              <label for="customizer-upgrade">Optional Dessert / Bar Option</label>
+              <select id="customizer-upgrade">
+                <option value="none">No additions</option>
+                <option value="dessert">Premium Dessert Table (+ RM5/pax)</option>
+                <option value="beverage">Mixologist Mocktail Bar (+ RM6/pax)</option>
+                <option value="both">Both Upgrades (+ RM10/pax)</option>
+              </select>
+            </div>
+            <div>
+              <label for="customizer-theme">Table Decor Palette</label>
+              <select id="customizer-theme">
+                <option value="classic">Classic White & Gold</option>
+                <option value="rustic">Rustic Wood & Greenery</option>
+                <option value="romantic">Maroon & Royal Rose</option>
+                <option value="corporate">Sleek Modern Charcoal</option>
+              </select>
+            </div>
+          </div>
+          <div class="customizer-footer text-center margin-top-1">
+            <span class="customizer-summary-text" id="customizer-summary">Selected: <strong>Standard Menu</strong> with <strong>Classic White & Gold</strong> decor theme.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages Detail List -->
+      <div class="section-container pt-0">
+        <div class="grid-layout cols-2 gap-3">
+          
+          <!-- Package 1 -->
+          <div class="package-detail-card" id="pkg-basic-buffet">
+            <div class="pkg-image">
+              <img src="assets/Wedding Catering (Food).png" alt="Wedding Catering Package">
+              <div class="pkg-price-badge">RM35 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>Wedding Banquet</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 50 Pax</span>
+              </div>
+              <p class="pkg-desc">Elegant catering menus designed for wedding receptions, engagement ceremonies, and solemnization events. Choose between our refined Western selections or timeless Classical Malaysian favorites.</p>
+              
+              <div class="pkg-menu-list">
+                <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Kerabu Mangga & Acar Timun</li>
+                  <li><strong>Carbs:</strong> Nasi Minyak & Fried Mee Hoon</li>
+                  <li><strong>Mains:</strong> Ayam Masak Merah, Beef Rendang, Sweet & Sour Fish</li>
+                  <li><strong>Side:</strong> Mixed Vegetables, Papadom & Sambal</li>
+                  <li><strong>Dessert:</strong> Traditional Kuih Selection, Fresh Fruits</li>
+                  <li><strong>Drink:</strong> Sirap Limau, Fresh Juice</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Caesar Salad, Garden Salad, Mushroom Soup</li>
+                  <li><strong>Carbs:</strong> Garlic herb butter rice & vegetarian penne arabiata</li>
+                  <li><strong>Mains:</strong> Grilled Rosemary Chicken, Beef Stroganoff, Baked Fish with Lemon Butter</li>
+                  <li><strong>Side:</strong> Roasted Seasonal Vegetables, Buttered Corn & Carrots</li>
+                  <li><strong>Dessert:</strong> Chocolate Brownies, Mini Cakes, Fresh Fruits</li>
+                  <li><strong>Drink:</strong> Fruit Punch, Iced Lemon Tea</li>
+                </ul>
+              </div>
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=basic" class="btn btn-maroon btn-full">Request Quote for Wedding Banquet</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="package-detail-card" id="pkg-wedding-banquet">
+            <div class="pkg-image">
+              <img src="assets/Corporate Catering (Food).png" alt="Corporate Catering Package">
+              <div class="pkg-price-badge">RM25 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>Corporate Lunch</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 30 Pax</span>
+              </div>
+              <p class="pkg-desc">Professionally curated menus for meetings, seminars, training sessions, product launches, and corporate functions.</p>
+              
+              <div class="pkg-menu-list">
+               <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Keropok Lekor, Mini Curry Puffs</li>
+                  <li><strong>Carbs:</strong> White Rice, Fried Noodles</li>
+                  <li><strong>Mains:</strong> Chicken Curry, Beef Black Pepper, Sweet & Sour Fish</li>
+                  <li><strong>Side:</strong> Stir-Fried Vegetables, Acar</li>
+                  <li><strong>Dessert:</strong> Jelly Cocktail, Traditional Kuih</li>
+                  <li><strong>Drink:</strong> Fruit Cordial, Sirap Bandung</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Coleslaw, Garden Salad</li>
+                  <li><strong>Carbs:</strong> Aglio Olio Pasta, Herb Rice</li>
+                  <li><strong>Mains:</strong> Grilled Chicken Chop, Beef Meatballs, Fish Florentine</li>
+                  <li><strong>Side:</strong> Roasted Vegetables, Garlic Bread</li>
+                  <li><strong>Dessert:</strong> Chocolate Mousse, Mini Cheesecakes</li>
+                  <li><strong>Drink:</strong> Iced Lemon Tea, Apple Juice</li>
+                </ul>
+              </div>
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=wedding" class="btn btn-maroon btn-full">Request Quote for Corporate Lunch</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="package-detail-card" id="pkg-corporate-lunch">
+            <div class="pkg-image">
+              <img src="assets/Birthday Catering (Food).png" alt="Birthday Catering Package">
+              <div class="pkg-price-badge">RM15 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>Birthday Bashes</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 40 Pax</span>
+              </div>
+              <p class="pkg-desc">Fun and flavorful menus created for birthday celebrations, private parties, and family gatherings.</p>
+              
+              <div class="pkg-menu-list">
+                <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Mini Popiah, Kerabu Salad</li>
+                  <li><strong>Carbs:</strong> Steamed Rice</li>
+                  <li><strong>Mains:</strong> Ayam Masak Kicap, Daging Rendang, Fish Curry</li>
+                  <li><strong>Side:</strong> Stir-fried Vegetables</li>
+                  <li><strong>Dessert:</strong> Kuih Lapis, Fresh Fruits</li>
+                  <li><strong>Drink:</strong> Teh O Ais, Sirap Limau Ais</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Chicken Caesar Salad, Garden Salad</li>
+                  <li><strong>Carbs:</strong> Butter Rice, Penne Alfredo</li>
+                  <li><strong>Mains:</strong> Grilled Chicken with Mushroom Sauce, Beef Lasagna, Baked Fish with Herbs</li>
+                  <li><strong>Side:</strong> Roasted Vegetables</li>
+                  <li><strong>Dessert:</strong> Chocolate Brownies, Fruit Platter</li>
+                  <li><strong>Drink:</strong> Coffee & Tea, Chilled Juice</li>
+                </ul>
+              </div>
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=corporate" class="btn btn-maroon btn-full">Request Quote for Birthday Bashes</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 4 -->
+          <div class="package-detail-card" id="pkg-premium-event">
+            <div class="pkg-image">
+              <img src="assets/Buffet (Food).png" alt="Buffet Catering Package">
+              <div class="pkg-price-badge">RM40 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>Buffet Event</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 100 Pax</span>
+              </div>
+              <p class="pkg-desc">Perfect for community events, family gatherings, festive celebrations, and social functions. A versatile menu with crowd-pleasing dishes suitable for all ages.</p>
+              
+              <div class="pkg-menu-list">
+                <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Mini Curry Puffs, Chicken Popiah</li>
+                  <li><strong>Carbs:</strong> Fried Rice, Fried Mee</li>
+                  <li><strong>Mains:</strong> Sweet & Sour Chicken, Fish Fingers</li>
+                  <li><strong>Side:</strong> French Fries, Coleslaw</li>
+                  <li><strong>Dessert:</strong> Fresh tropical fruit platter</li>
+                  <li><strong>Drink:</strong> Cordials (Orange, Syrup, Grape)</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Chicken Wings, Sausage Rolls</li>
+                  <li><strong>Carbs:</strong> Mac & Cheese, Creamy Pasta</li>
+                  <li><strong>Mains:</strong> Mini Chicken Chop, Beef Meatballs</li>
+                  <li><strong>Side:</strong> French Fries, Coleslaw</li>
+                  <li><strong>Dessert:</strong> Fresh tropical fruit platter</li>
+                  <li><strong>Drink:</strong> Fruit Punch, Soft Drinks</li>
+                </ul>
+              </div>
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=premium" class="btn btn-maroon btn-full">Request Quote for Buffet Event</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 5 -->
+          <div class="package-detail-card" id="pkg-premium-event">
+            <div class="pkg-image">
+              <img src="assets/Packed Meal (Food).png" alt="Packed Meals Catering Package">
+              <div class="pkg-price-badge">RM25 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>Packed Meal Boxes</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 20 Pax</span>
+              </div>
+              <p class="pkg-desc">Convenient and hygienically packed individual meals suitable for training sessions, conferences, site visits, school events, and corporate programs.</p>
+
+              <div class="pkg-menu-list">
+                <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Acar Timun</li>
+                  <li><strong>Carbs:</strong> Steamed Rice</li>
+                  <li><strong>Mains:</strong> Ayam Masak Merah or Rendang Chicken, Fish Curry</li>
+                  <li><strong>Side:</strong> Mixed Vegetables</li>
+                  <li><strong>Dessert:</strong> Seasonal Fruit</li>
+                  <li><strong>Drink:</strong> Mineral Water, Assorted Drinks</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Fresh Garden Salad</li>
+                  <li><strong>Carbs:</strong> Herb Rice or Mashed Potato</li>
+                  <li><strong>Mains:</strong> Grilled Chicken Chop or Baked Fish Fillet</li>
+                  <li><strong>Side:</strong> Buttered Vegetables</li>
+                  <li><strong>Dessert:</strong> Chocolate Brownie</li>
+                  <li><strong>Drink:</strong> Mineral Water, Assorted Drinks</li>
+                </ul>
+              </div>      
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=premium" class="btn btn-maroon btn-full">Request Quote for Packed Meal Boxes</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Package 6 -->
+          <div class="package-detail-card" id="pkg-premium-event">
+            <div class="pkg-image">
+              <img src="assets/High Tea (Food).png" alt="High Tea Catering Package">
+              <div class="pkg-price-badge">RM20 / pax</div>
+            </div>
+            <div class="pkg-info">
+              <div class="pkg-header">
+                <h2>High Tea Event</h2>
+                <span class="pkg-meta-item"><i class="fa-solid fa-user-group"></i> Min. 20 Pax</span>
+              </div>
+              <p class="pkg-desc">A sophisticated selection of light bites and sweet treats, ideal for networking events, launches, afternoon receptions, and social gatherings.</p>
+              
+             <div class="pkg-menu-list">
+                <h4>Package Menu List: Classical Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Assorted Traditional Kuih</li>
+                  <li><strong>Carbs:</strong> Mini Roti Jala</li>
+                  <li><strong>Mains:</strong> Chicken, Meat Curry, Mini Karipap</li>
+                  <li><strong>Side:</strong> Fresh Fruit Selection</li>
+                  <li><strong>Dessert:</strong> Seri Muka, Kuih Lapis, Onde-Onde</li>
+                  <li><strong>Drink:</strong> Teh Tarik, Kopi O</li>
+                </ul>
+		<br>
+		<h4>Package Menu List: Western Menu</h4>
+                <ul>
+                  <li><strong>Appetizer:</strong> Roll Sandwiches, Mini Quiches</li>
+                  <li><strong>Carbs:</strong> Croissants, Pastries</li>
+                  <li><strong>Mains:</strong> Chicken Vol-au-Vent, Mini Chicken Pie</li>
+                  <li><strong>Side:</strong> Sweets & Crackers</li>
+                  <li><strong>Dessert:</strong> Macarons, Scones, Petite Cakes</li>
+                  <li><strong>Drink:</strong> Premium Tea Selection, Fresh Brewed Coffee</li>
+                </ul>
+              </div>
+              
+              <div class="pkg-actions">
+                <a href="7_quotation_request.html?package=premium" class="btn btn-maroon btn-full">Request Quote for High Tea Event</a>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      </div>
+      
+      <!-- Festive Special Banner -->
+      <div class="section-container bg-cream festive-special-section">
+        <div class="card-glass border-gold text-center pad-2">
+          <span class="gold-text uppercase-lettering"><i class="fa-solid fa-snowman"></i> Special Festive Package</span>
+          <h3>Holiday Feast Gala Menu</h3>
+          <p class="max-w-600 margin-auto margin-bottom-1">Available November through January. Bring the warmth of holidays to your table with roast turkey, gravy, mashed potatoes, pumpkin pie, and warm spiced cider.</p>
+          <a href="7_quotation_request.html?package=festive" class="btn btn-gold">Get Holiday Quote (RM35/pax)</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

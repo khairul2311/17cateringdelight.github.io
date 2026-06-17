@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Experience professional, premium, and delicious catering services for weddings, corporate lunches, birthdays, and festive celebrations. Request a quote online today.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    /* --- Facebook Announcement Panel Styling --- */
+    .facebook-announcement-panel {
+      background: linear-gradient(135deg, #ffffff, #fdfbf7);
+      border: 1px solid #eaeaea;
+      border-radius: 12px;
+      padding: 35px 25px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .facebook-announcement-panel h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .facebook-announcement-panel p {
+      font-family: 'Outfit', sans-serif;
+      color: #555;
+      max-width: 650px;
+      margin: 0 auto 25px auto;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    .btn-facebook {
+      background-color: #1877F2;
+      color: #ffffff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      border: 2px solid #1877F2;
+    }
+
+    .btn-facebook:hover {
+      background-color: #145dbf;
+      border-color: #145dbf;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link active" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="#booking" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+ <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link active">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 10. CONTACT US SECTION -->
+    <section class="page-section" id="contact">
+
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Get In Touch</span>
+        <h1 class="text-white page-heading">Contact Us</h1>
+        <p class="max-w-600 margin-auto text-light">We are located in the heart of downtown. Reach out via email, phone, WhatsApp, or drop a message through the contact form.</p>
+      </div>
+
+      <div class="section-container">
+        <div class="grid-layout cols-2 gap-3">
+          
+          <!-- Contact Info & Map Mockup -->
+          <div class="contact-details-panel card-glass pad-2">
+            <h2>Let's Discuss Your Event</h2>
+            <p class="margin-bottom-1">Whether you need help selecting a package or want to schedule a menu tasting session, our hospitality consulting staff is here to guide you.</p>
+            
+            <ul class="contact-info-list">
+              <li>
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Our Kitchen & VIP Lounge:</strong>
+                  <p>17 Catering Delight Sdn. Bhd. Ayer Keroh, 75450 Melaka, Malaysia</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <strong>Phone Support:</strong>
+                  <p><a href="https://chat.whatsapp.com/KqgLjMQf8G0Cyn4yDADx8A">+60 10-504 7406</a> (Mon-Sat, 8:00 AM - 7:00 PM)</p>
+                </div>
+              </li>
+              <li>
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <strong>Email:</strong>
+                  <p><a href="mailto:cateringdelight17@gmail.com">cateringdelight17@gmail.com</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="info-icon"><i class="fa-brands fa-whatsapp whatsapp-color"></i></div>
+                <div>
+                  <strong>Direct WhatsApp Chat:</strong>
+                  <p><a href="https://chat.whatsapp.com/KqgLjMQf8G0Cyn4yDADx8A" target="_blank" rel="noopener noreferrer">Chat Now on WhatsApp</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Interactive Google Map -->
+            <div class="map-container margin-top-2" style="margin-top: 1.5rem;">
+              <iframe
+                src="https://maps.google.com/maps?q=2%C2%B016'11.7%22N%20102%C2%B017'40.2%22E&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="250"
+                style="border:0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Message Form -->
+          <div class="contact-form-panel card-glass pad-2">
+            <h3>Send Us a Quick Message</h3>
+            <p class="margin-bottom-1 text-small text-light">Required fields are marked with <span class="required">*</span></p>
+            
+            <form id="contact-message-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="Visitor_Name" placeholder="John Doe" required>
+                <span class="error-msg" id="err-contact-name">Please write your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="Email_Address" placeholder="johndoe@email.com" required>
+                <span class="error-msg" id="err-contact-email">Please write a valid email.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="Subject" placeholder="General Inquiry / Tasting request">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message Content <span class="required">*</span></label>
+                <textarea id="contact-message" name="Message_Content" rows="5" placeholder="Let us know how we can help you..." required></textarea>
+                <span class="error-msg" id="err-contact-message">Please write a message description.</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-maroon btn-full" id="submit-contact">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- NEW: FACEBOOK ANNOUNCEMENTS BANNER -->
+        <div class="facebook-announcement-panel">
+          <h3><i class="fa-brands fa-facebook text-facebook" style="color: #1877F2;"></i> Latest Updates & Announcements</h3>
+          <p>Looking for information on current job openings, temporary holiday closures, or updates regarding our brand new branch locations?</p><p> Follow our official Facebook page to stay instantly informed on all things Catering Delight!</p>
+          <a href="https://www.facebook.com/17cateringdelight" target="_blank" rel="noopener noreferrer" class="btn-facebook">
+            <i class="fa-brands fa-facebook-f"></i> Visit Our Facebook Page
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Success Notification Modals -->
+  <div class="success-modal" id="success-modal">
+    <div class="modal-card text-center card-glass">
+      <div class="modal-icon text-success"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 id="modal-heading">Thank You!</h3>
+      <p id="modal-body">Your request has been successfully received. A coordinator will get back to you within 24 hours.</p>
+      <div class="modal-summary-container" id="modal-summary-box"></div>
+      <button class="btn btn-maroon" id="modal-close-btn">Dismiss</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+     <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved. Designed under BERC2393 Assignment Guidelines.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

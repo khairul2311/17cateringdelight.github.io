@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Quote | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Calculate your catering budget immediately with our interactive bill breakdown estimator. Enter guest count and upgrades to get a price.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+     <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link active" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link active">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 7. QUOTATION REQUEST SECTION -->
+    <section class="page-section" id="quotes">
+
+ <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Instant Estimator</span>
+        <h1 class="text-white page-heading">Request A Quotation</h1>
+        <p class="max-w-600 margin-auto text-light">Calculate your budget instantly using our interactive mock calculator, and submit it directly to our sales desk.</p>
+      </div>
+
+      <!-- Quotation Flow Infographic -->
+      <div class="section-container quotes-flow-section">
+        <div class="text-center max-w-700 margin-auto margin-bottom-2">
+          <span class="section-sub gold-text">How It Works</span>
+          <h2 class="section-title">Our Quotation & Planning Flow</h2>
+          <p class="section-desc">From initial estimate request to final dish presentation, we outline the simple steps.</p>
+        </div>
+
+        <div class="quotation-flow-steps">
+          <div class="flow-step">
+            <div class="step-num">1</div>
+            <h4>Request & Calculate</h4>
+            <p>Compute an estimate below or contact us with your event date and guest numbers.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">2</div>
+            <h4>Sales Consulting</h4>
+            <p>Our catering coordinators contact you within 24 hours to select and customize dishes.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">3</div>
+            <h4>Tasting Session</h4>
+            <p>For weddings or events over 80 guests, enjoy a complimentary menu tasting in our VIP lounge.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">4</div>
+            <h4>Agreement & Prep</h4>
+            <p>Lock in the date, coordinate setup timelines, and manage allergen details safely.</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">5</div>
+            <h4>Event Execution</h4>
+            <p>Our staff arrives 2 hours early, installs chafers, setups decor, and serves delicious food!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Price Calculator -->
+      <div class="section-container bg-cream">
+        <div class="grid-layout cols-2 gap-3">
+          
+          <!-- Calculator Settings -->
+          <div class="calc-settings-card card-glass pad-2">
+            <h2 class="calculator-title"><i class="fa-solid fa-calculator gold-text"></i> Catering Price Calculator</h2>
+            <p class="margin-bottom-1">Fill out the options below to calculate your estimated event budget instantly.</p>
+            
+            <div class="form-group">
+              <label for="calc-package">Catering Package</label>
+              <select id="calc-package">
+                  <option value="">-- Choose Catering Menu --</option>
+                  <option value="basic" data-price="40">Basic Buffet (RM40/pax)</option>
+                  <option value="corporate" data-price="25">Corporate Lunch (RM25/pax)</option>
+                  <option value="wedding" data-price="35">Wedding Banquet (RM35/pax)</option>
+                  <option value="birthday" data-price="15">Birthday Bashes (RM15/pax)</option>
+                  <option value="packed" data-price="25">Packed Meal Box (RM25/pax)</option>
+                  <option value="high" data-price="20">High Tea (RM20/pax)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calc-guests">Number of Guests (Pax)</label>
+              <input type="number" id="calc-guests" value="0">
+            </div>
+
+            <div class="form-group">
+              <label>Service Upgrades & Add-ons</label>
+              <div class="calc-checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="add-live-station" value="60">
+                  <span class="checkmark"></span>
+                  Live Cooking Carving Station (+ RM60/pax)
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" id="add-dessert-bar" value="20">
+                  <span class="checkmark"></span>
+                  Gourmet Dessert Display (+ RM20/pax)
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" id="add-barista" value="26">
+                  <span class="checkmark"></span>
+                  Premium Barista Coffee Bar (+ RM26/pax)
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" id="add-butler" value="1000" data-fixed="true">
+                  <span class="checkmark"></span>
+                  Dedicated Butler Service (Fixed + RM1,000)
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" id="add-table-styling" value="500" data-fixed="true">
+                  <span class="checkmark"></span>
+                  Thematic Floral Decor Styling (Fixed + RM500)
+                </label>
+              </div>
+            </div>
+            
+            <!-- Delivery Area Check Bonus Feature -->
+            <div class="delivery-checker-box margin-top-2 border-gold pad-1 card-glass">
+              <h4><i class="fa-solid fa-map-location-dot gold-text"></i> Area Delivery Checker</h4>
+              <p class="text-small">Enter your ZIP/Postal Code to verify delivery coverage:</p>
+              <div class="flex-layout gap-1 margin-top-05">
+                <input type="text" id="delivery-zip" placeholder="Enter Zip Code (e.g., 90210)">
+                <button type="button" class="btn btn-maroon btn-small" id="btn-check-delivery">Check Code</button>
+              </div>
+              <span id="delivery-status" class="delivery-status-msg"></span>
+            </div>
+
+          </div>
+
+          <!-- Live Cost Breakdown -->
+          <div class="calc-result-card bg-maroon text-white pad-2 flex-layout flex-column justify-between">
+            <div>
+              <h3 class="text-white border-bottom pb-1 mb-1"><i class="fa-solid fa-receipt gold-text"></i> Estimated Bill Breakdown</h3>
+              
+              <ul class="breakdown-list">
+                <li>
+                  <span class="lbl">Selected Package:</span>
+                  <span class="val" id="breakdown-pkg">Choose Catering Menu</span>
+                </li>
+                <li>
+                  <span class="lbl">Guest Count:</span>
+                  <span class="val" id="breakdown-guests">0 Pax</span>
+                </li>
+                <li>
+                  <span class="lbl">Package Subtotal:</span>
+                  <span class="val" id="breakdown-pkg-subtotal">RM0.00</span>
+                </li>
+                <li id="breakdown-itemized-extras" class="border-top pt-1 mt-1 text-small text-light">
+                  No additional upgrades selected.
+                </li>
+              </ul>
+            </div>
+
+            <div class="result-total-section border-top pt-1 mt-2">
+              <div class="flex-layout justify-between align-center">
+                <div>
+                  <span class="total-lbl text-light">Estimated Total Cost:</span>
+                  <div class="total-val" id="breakdown-total">RM0.00</div>
+                </div>
+                <div>
+                  <span class="total-lbl text-light">Cost Per Person:</span>
+                  <div class="per-person-val" id="breakdown-per-pax">RM0.00</div>
+                </div>
+              </div>
+              <button class="btn btn-gold btn-full margin-top-15" id="btn-calc-apply">Submit This Quote Request</button>
+              <p class="text-center text-small text-light margin-top-05"><i class="fa-solid fa-circle-info"></i> Calculations exclude 6% SST. Subject to final date availability.</p>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved. Designed under BERC2393 Assignment Guidelines.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

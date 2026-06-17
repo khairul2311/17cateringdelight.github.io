@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Event | Catering Delight</title>
+  <link rel="icon" type="image/png" href="assets/Logo Catering Delight.png">
+  <meta name="description" content="Reserve your catering event date. Fill out our online reservation form with package choice, guests, location, and special requests.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="1_homepage.html" class="logo-area" id="logo-link">
+        <img src="assets/Logo Catering Delight.png" alt="Catering Delight Logo" class="brand-logo">
+        <span class="brand-name"> 17 Catering <span class="gold-text">Delight</span></span>
+      </a>
+
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li><a href="1_homepage.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="2_about_us.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="3_catering_services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="4_menu_food_packages.html" class="nav-link" id="nav-menu-packages">Menus</a></li>
+          <li><a href="5_food_gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+          <li><a href="6_event_packages_booking.html" class="nav-link active" id="nav-booking">Book Event</a></li>
+          <li><a href="7_quotation_request.html" class="nav-link" id="nav-quotes">Get Quote</a></li>
+          <li><a href="8_customer_testimonials.html" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="9_faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+          <li><a href="10_contact_us.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-ctas">
+        <a href="6_event_packages_booking.html" class="btn btn-gold btn-header-cta" id="header-book-btn">Book Now</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-header">
+      <span class="brand-name">Catering <span class="gold-text">Delight</span></span>
+      <button class="mobile-close-btn" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="mobile-menu">
+      <li><a href="1_homepage.html" class="mobile-link">Home</a></li>
+      <li><a href="2_about_us.html" class="mobile-link">About Us</a></li>
+      <li><a href="3_catering_services.html" class="mobile-link">Services</a></li>
+      <li><a href="4_menu_food_packages.html" class="mobile-link">Menus & Packages</a></li>
+      <li><a href="5_food_gallery.html" class="mobile-link">Food Gallery</a></li>
+      <li><a href="6_event_packages_booking.html" class="mobile-link active">Event Booking</a></li>
+      <li><a href="7_quotation_request.html" class="mobile-link">Quotation Request</a></li>
+      <li><a href="8_customer_testimonials.html" class="mobile-link">Testimonials</a></li>
+      <li><a href="9_faq.html" class="mobile-link">FAQ</a></li>
+      <li><a href="10_contact_us.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 6. EVENT PACKAGES / BOOKING SECTION -->
+    <section class="page-section" id="booking">
+
+ <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content-container">
+          <span class="hero-sub">PREMIUM CATERING SERVICES</span>
+          <h1 class="hero-title">Delicious Food,<br><span class="gold-text">Memorable Events</span></h1>
+          <p class="hero-desc">Elevate your celebrations with gourmet culinary creations, spectacular setups, and professional hospitality designed to wow your guests.</p>
+          <div class="hero-actions">
+            <a href="4_menu_food_packages.html" class="btn btn-gold btn-large" id="hero-menu-cta">Explore Menus</a>
+            <a href="7_quotation_request.html" class="btn btn-outline-white btn-large" id="hero-quote-cta">Calculate Estimate</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="section-container header-banner-section bg-maroon text-white text-center">
+        <span class="gold-text uppercase-lettering">Reservations</span>
+        <h1 class="text-white page-heading">Book Your Event</h1>
+        <p class="max-w-600 margin-auto text-light">Fill out your event details below to reserve your date. Our team will follow up to finalize menus and setup.</p>
+      </div>
+
+      <div class="section-container max-w-800 margin-auto">
+        <div class="booking-form-card card-glass">
+          <form id="event-booking-form" novalidate>
+            <div class="form-grid">
+              
+              <!-- Event Type -->
+              <div class="form-group">
+                <label for="book-event-type">Event Type <span class="required">*</span></label>
+                <select id="book-event-type" name="Event_Type" required>
+                  <option value="">-- Select Event Category --</option>
+                  <option value="wedding">Wedding Reception</option>
+                  <option value="corporate">Corporate Seminar / Dinner</option>
+                  <option value="birthday">Birthday Celebration</option>
+                  <option value="buffet">General Social Buffet</option>
+                  <option value="festive">Holiday / Festive Gathering</option>
+                  <option value="hightea">Afternoon High Tea</option>
+                  <option value="vip">VIP Fine Dining</option>
+                </select>
+                <span class="error-msg" id="err-book-event-type">Please select an event category.</span>
+              </div>
+
+              <!-- Menu Package selection -->
+              <div class="form-group">
+                <label for="book-package">Select Menu Package <span class="required">*</span></label>
+                <select id="book-package" name="Selected_Package" required>
+                  <option value="">-- Choose Catering Menu --</option>
+                  <option value="basic" data-price="40">Basic Buffet (RM40/pax)</option>
+                  <option value="corporate" data-price="25">Corporate Lunch (RM25/pax)</option>
+                  <option value="wedding" data-price="35">Wedding Banquet (RM35/pax)</option>
+                  <option value="birthday" data-price="15">Birthday Bashes (RM15/pax)</option>
+                  <option value="packed" data-price="25">Packed Meal Box (RM25/pax)</option>
+                  <option value="high" data-price="20">High Tea (RM20/pax)</option>
+                  <option value="custom">Custom Menu (Request custom layout)</option>
+                </select>
+                <span class="error-msg" id="err-book-package">Please select your package preference.</span>
+              </div>
+
+              <!-- Guest count -->
+              <div class="form-group">
+                <label for="book-guests">Estimated Guest Count <span class="required">*</span></label>
+                <input type="number" id="book-guests" name="Guest_Count" min="20" placeholder="Minimum 20 guests" required>
+                <span class="error-msg" id="err-book-guests">Please enter 20 or more guests.</span>
+              </div>
+
+              <!-- Date & Time -->
+              <div class="form-group">
+                <label for="book-datetime">Event Date & Time <span class="required">*</span></label>
+                <input type="datetime-local" id="book-datetime" name="Event_Date_Time" required>
+                <span class="error-msg" id="err-book-datetime">Please select a valid future date and time.</span>
+              </div>
+
+              <!-- Event Location -->
+              <div class="form-group full-width">
+                <label for="book-location">Event Location/Address <span class="required">*</span></label>
+                <input type="text" id="book-location" name="Event_Location" placeholder="Enter venue name and complete street address" required>
+                <span class="error-msg" id="err-book-location">Please enter event delivery location.</span>
+              </div>
+
+              <!-- Contact Info: Name -->
+              <div class="form-group">
+                <label for="book-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="book-name" name="Client_Name" placeholder="John Doe" required>
+                <span class="error-msg" id="err-book-name">Name is required.</span>
+              </div>
+
+              <!-- Contact Info: Email -->
+              <div class="form-group">
+                <label for="book-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="book-email" name="Email_Address" placeholder="johndoe@email.com" required>
+                <span class="error-msg" id="err-book-email">Enter a valid email address.</span>
+              </div>
+
+              <!-- Contact Info: Phone -->
+              <div class="form-group">
+                <label for="book-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="book-phone" name="Phone_Number" placeholder="e.g. +6012 345 6789" required>
+                <span class="error-msg" id="err-book-phone">Valid phone number is required.</span>
+              </div>
+
+              <!-- Special Request -->
+              <div class="form-group full-width">
+                <label for="book-requests">Special Requests / Dietary Restrictions</label>
+                <textarea id="book-requests" name="Special_Requests" rows="4" placeholder="E.g., vegetarian alternatives for 5 guests, halal ingredients, live carvings, custom table decor palette..."></textarea>
+              </div>
+
+            </div>
+            
+            <div class="form-actions text-center margin-top-2">
+              <button type="submit" class="btn btn-gold btn-large" id="submit-booking">Submit Reservation Booking</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Success Notification Modals -->
+  <div class="success-modal" id="success-modal">
+    <div class="modal-card text-center card-glass">
+      <div class="modal-icon text-success"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 id="modal-heading">Thank You!</h3>
+      <p id="modal-body">Your request has been successfully received. A coordinator will get back to you within 24 hours.</p>
+      <div class="modal-summary-container" id="modal-summary-box"></div>
+      <button class="btn btn-maroon" id="modal-close-btn">Dismiss</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column brand-summary">
+        <span class="brand-name text-white">Catering <span class="gold-text">Delight</span></span>
+        <p>Providing award-winning luxury catering and custom food designs for weddings, corporate dinners, and families since 2012.</p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="1_homepage.html">Home</a></li>
+          <li><a href="2_about_us.html">About Us</a></li>
+          <li><a href="3_catering_services.html">Our Services</a></li>
+          <li><a href="4_menu_food_packages.html">Menus & Packages</a></li>
+          <li><a href="5_food_gallery.html">Food Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-links-list">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="6_event_packages_booking.html">Book Event</a></li>
+          <li><a href="7_quotation_request.html">Request Quotation</a></li>
+          <li><a href="9_faq.html">FAQ</a></li>
+          <li><a href="10_contact_us.html">Contact Details</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-col">
+        <h3>Newsletter Sign-Up</h3>
+        <p>Subscribe to receive seasonal recipes, party hosting tips, and special holiday package discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-gold btn-small"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Catering Delight (CateringDelight.com). All Rights Reserved. Designed under BERC2393 Assignment Guidelines.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
